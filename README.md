@@ -72,7 +72,7 @@ python seed.py
 
 12. We will write code in the `app.py` file to build our routes and views.
 
-13. Run this command in the terminal to run our flask app:
+13. Run this command in the terminal to run our flask app. Again, make sure that you are in the `server` directory before running this terminal command:
 
 ```py
 flask run
