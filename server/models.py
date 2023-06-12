@@ -6,3 +6,9 @@ metadata = MetaData(naming_convention={
 })
 
 db = SQLAlchemy(metadata=metadata)
+
+class Hotel(db.Model):
+    __tablename__ = 'hotels'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)

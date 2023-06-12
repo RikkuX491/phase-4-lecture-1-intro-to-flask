@@ -44,7 +44,9 @@ app.run(port=7000, debug=True)
 
 ```py
 export FLASK_APP=app.py
+
 export FLASK_RUN_PORT=7000
+
 flask db init
 ```
 
@@ -66,4 +68,12 @@ flask db upgrade head
 
 ```py
 python seed.py
+```
+
+12. We will write code in the `app.py` file to build our routes and views.
+
+13. Run this command in the terminal to run our flask app:
+
+```py
+flask run
 ```
