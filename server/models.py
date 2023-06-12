@@ -6,3 +6,6 @@ metadata = MetaData(naming_convention={
 })
 
 db = SQLAlchemy(metadata=metadata)
+
+class Hotel(db.Model):
+    pass
