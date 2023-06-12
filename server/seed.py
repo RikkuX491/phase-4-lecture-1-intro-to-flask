@@ -14,3 +14,4 @@ with app.app_context():
 
     db.session.add_all(hotels)
     db.session.commit()
+    print("🌱 Hotels successfully seeded! 🌱")
