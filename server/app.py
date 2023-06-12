@@ -27,7 +27,7 @@ def all_hotels():
         }
         response_body.append(hotel_dictionary)
 
-    return make_response(response_body)
+    return make_response(response_body, 200)
 
 @app.route('/hotels/<int:id>')
 def hotel_by_id(id):
