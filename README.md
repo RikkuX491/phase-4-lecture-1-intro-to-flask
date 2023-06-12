@@ -19,9 +19,13 @@ In today's lecture, we will discuss about Flask, Routing and Views, Creating Res
 ## Setup
 
 1. Fork and then Clone this repository.
+
 2. Make sure that you are in the correct directory (folder) that contains a `Pipfile`, then run `pipenv install` in your terminal to install the required libraries.
+
 3. Now that your `pipenv` virtual environment is ready to use, enter `pipenv shell` to enter the virtual environment.
+
 4. Enter the command `cd server` in the terminal to move into the server directory.
+
 5. Write the following code after line 7 in `app.py`:
 
 ```py
@@ -77,3 +81,7 @@ python seed.py
 ```py
 flask run
 ```
+
+14. After building the route and view for `/hotels` in `app.py`, visit `http://localhost:7000/hotels` in the browser to view the data for the hotels.
+
+15. After building the route and view for `/hotels/<int:id>` in `app.py`, visit `http://localhost:7000/hotels/1` in the browser to view the data for the first hotel. Visit `http://localhost:7000/hotels/2` in the browser to view the data for the second hotel, etc.
