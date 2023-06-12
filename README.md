@@ -40,7 +40,9 @@ db.init_app(app)
 app.run(port=7000, debug=True)
 ```
 
-7. Run these commands in the terminal (make sure that you are in the `server` directory before running these terminal commands):
+7. We will write code in the `models.py` file to design our `hotels` table and the columns for the table.
+
+8. Run these commands in the terminal (make sure that you are in the `server` directory before running these terminal commands):
 
 ```py
 export FLASK_APP=app.py
@@ -49,8 +51,6 @@ export FLASK_RUN_PORT=7000
 
 flask db init
 ```
-
-8. We will write code in the `models.py` file to design our `hotels` table and the columns for the table.
 
 9. Run this command in the terminal to generate a migration file that will be used to create the hotels table and columns for the table (make sure that you are in the `server` directory before running this terminal command):
 
