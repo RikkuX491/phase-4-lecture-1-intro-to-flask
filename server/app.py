@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from flask import Flask, make_response
+from flask import Flask, make_response, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -27,7 +27,7 @@ def all_hotels():
         }
         response_body.append(hotel_dictionary)
 
-    return make_response(response_body, 200)
+    return make_response(jsonify(response_body), 200)
 
 @app.route('/hotels/<int:id>')
 def hotel_by_id(id):
@@ -46,7 +46,7 @@ def hotel_by_id(id):
         }
         status = 200
 
-    return make_response(response_body, status)
+    return make_response(jsonify(response_body), status)
 
 if __name__ == '__main__':
     app.run(port=7000, debug=True)
