@@ -22,3 +22,20 @@ In today's lecture, we will discuss about Flask, Routing and Views, Creating Res
 2. Make sure that you are in the correct directory (folder) that contains a `Pipfile`, then run `pipenv install` in your terminal to install the required libraries.
 3. Now that your `pipenv` virtual environment is ready to use, enter `pipenv shell` to enter the virtual environment.
 4. Enter the command `cd server` in the terminal to move into the server directory.
+5. Write the following code after line 7 in `app.py`:
+
+```py
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotels.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+migrate = Migrate(app, db)
+
+db.init_app(app)
+```
+
+6. Write the following code within the `if __name__ == '__main__':` block of code in `app.py` (Make sure to delete `pass` before writing your code):
+
+```py
+app.run(port=7000, debug=True)
+```

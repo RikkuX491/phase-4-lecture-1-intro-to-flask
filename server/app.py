@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-app = Flask(__name__)
+from models import db
 
 if __name__ == '__main__':
-    app.run(port=7000, debug=True)
+    pass
